@@ -1,0 +1,15 @@
+version: '3'
+services:
+  9hits:
+    image: mauros5/9hits_autoinstall:latest
+    container_name: 9hits
+    tty: true
+    network_mode: host
+    environment:
+      - token=a24f9dff55e0f812c2ba1684a450174f
+      - sessions=10
+      - maxcpu=1
+      - restart=1
+      - name=vps1
+      - url=https://rs.9hits.com/9hviewer/9hits-linux-x64-2.5.1.tar.bz2
+      - exProxyServer=
